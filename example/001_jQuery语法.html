@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script  src="../js/jquery-3.0.0.js"></script>
+		<meta charset="UTF-8">
+		<title>实例</title>
+		<script>
+			$(document).ready(function(){
+	  			$("p").click(function(){
+	    			$(this).hide();
+	  			});
+	  			$("#show1").click(function(){
+	  				$("p").show();
+	  			});
+	  				
+			});
+		</script>
+	</head>
+	<!--
+		jQuery 语法
+			jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。
+			基础语法是：$(selector).action()
+			美元符号定义 jQuery
+			选择符（selector）“查询”和“查找” HTML 元素
+			jQuery 的 action() 执行对元素的操作
+		示例
+			$(this).hide() - 隐藏当前元素
+			$("p").hide() - 隐藏所有段落
+			$(".test").hide() - 隐藏所有 class="test" 的所有元素
+			$("#test").hide() - 隐藏所有 id="test" 的元素
+			提示：jQuery 使用的语法是 XPath 与 CSS 选择器语法的组合。在本教程接下来的章节，您将学习到更多有关选择器的语法。
+		
+	-->
+	<body>
+		<p>如果您点击我，我会消失。</p>
+		<p>点击我，我会消失。</p>
+		<p>也要点击我哦。</p>
+		<input type="button" id="show1" value="显示"/>
+	</body>
+</html>

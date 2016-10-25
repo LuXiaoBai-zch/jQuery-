@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+		<meta charset="UTF-8">
+		<title>jQuery效果</title>
+		<script>
+			$(document).ready(function(){
+				$("#bnt1").click(function(){
+					$('#show1').toggle(1000);
+				});
+			});
+			
+		</script>
+	</head>
+	
+	<style>
+		p{
+			padding: 0;
+			width:500px;
+			margin: auto;
+			background: aliceblue;
+			border: solid darkgrey 1px;
+			height: 40px; 
+			line-height: 40px; 
+			text-align: center;
+		}
+		
+	</style>
+	<!--
+		1.隐藏/显示
+			hide	隐藏方法
+			show	显示方法
+			toggle	切换hide和show
+	-->
+	
+	<body>
+		<h1 style="margin: auto;">隐藏/显示</h1>
+		<p id="bnt1">点击这里，隐藏/显示面板</p>
+		<p style="height: 80px;" id="show1">一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。<br />
+在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。</p>
+	</body>
+</html>
